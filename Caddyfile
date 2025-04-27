@@ -1,0 +1,10 @@
+my-domain.de {
+reverse_proxy api:8000
+
+    # Enable gzip compression
+    encode gzip
+
+    # Automatic TLS via Let's Encrypt
+    tls my@mail.de
+
+}
